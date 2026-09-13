@@ -70,7 +70,7 @@ export default function Projects() {
           {visibleProjects.map((project) => (
             <div
               key={project.id}
-              className="p-4 sm:p-3 rounded-2xl bg-[#ffffff]/50 transition-all duration-300 flex flex-col justify-between group shadow-xs"
+              className="p-4 sm:p-3 rounded-2xl bg-[#ffffff]/80 transition-all duration-300 flex flex-col justify-between group shadow-xs"
             >
               <div>
                 {/* Preview Image */}
