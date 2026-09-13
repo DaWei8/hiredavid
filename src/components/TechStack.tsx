@@ -39,8 +39,8 @@ export default function TechStack() {
               <img
                 src={`https://cdn.jsdelivr.net/npm/simple-icons@11/icons/${item.icon}.svg`}
                 alt={item.name}
-                width={38}
-                height={38}
+                width={26}
+                height={26}
                 className="shrink-0 object-contain"
                 loading="lazy"
                 onError={(e) => {
