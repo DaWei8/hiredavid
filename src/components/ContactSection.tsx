@@ -67,8 +67,8 @@ export default function ContactSection() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-stone-700/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-100 tracking-tight">
+        <div className="lg:text-center mb-12">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-stone-100 tracking-tight">
             Get In Touch
           </h2>
           <p className="text-stone-400 text-base mt-2">
@@ -77,7 +77,7 @@ export default function ContactSection() {
         </div>
 
         {/* Contact Info Row */}
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
+        <div className="flex flex-wrap lg:items-center lg:justify-center gap-4 mb-10">
           <button
             onClick={() => copyToClipboard(PERSONAL_INFO.email)}
             className="flex items-center gap-2 px-4 py-2.5 lowercase rounded-md bg-[#292524] border border-stone-700 hover:border-stone-500 text-sm text-stone-200 shadow-sm transition-colors cursor-pointer"
@@ -113,7 +113,7 @@ export default function ContactSection() {
         </div>
 
         {/* Dark Form Card */}
-        <div className="p-6 sm:p-8 rounded-2xl bg-[#292524] border border-stone-700/80 shadow-xl">
+        <div className="p-4 sm:p-8 rounded-lg bg-[#292524] border border-stone-700/80 shadow-xl">
           {submitted ? (
             <div className="py-8 text-center space-y-3 animate-fade-in">
               <div className="w-12 h-12 rounded-full bg-stone-800 text-stone-100 mx-auto flex items-center justify-center border border-stone-600">

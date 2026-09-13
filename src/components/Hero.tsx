@@ -43,14 +43,8 @@ export default function Hero({ onOpenResume }: HeroProps) {
               href="#projects"
               className="px-6 py-4 rounded-lg text-sm font-semibold text-stone-800 bg-[#ffffff] border border-[#e7e1d4] hover:border-[#c8bfb0] shadow-xs transition-all"
             >
-              VIEW FEATURED WORK ↗
+              FEATURED WORK ↗
             </a>
-            <button
-              onClick={onOpenResume}
-              className="px-6 py-4 rounded-lg text-sm font-semibold text-stone-700 bg-[#efe8dc] border border-[#e0d6c5] hover:border-stone-400 hover:text-stone-900 shadow-xs transition-all"
-            >
-              VIEW RESUME (PDF)
-            </button>
           </div>
         </div>
       </div>
