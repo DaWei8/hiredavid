@@ -61,9 +61,9 @@ export const metadata: Metadata = {
     siteName: "David Sawe Portfolio — Full Stack & Design Engineer",
     images: [
       {
-        url: "https://hiredavid.vercel.app/opengraph-image",
-        width: 1200,
-        height: 630,
+        url: "https://hiredavid.vercel.app/og-image.png",
+        width: 1024,
+        height: 764,
         alt: "David Sawe — Senior Full Stack Developer & Design Engineer in Lagos, Nigeria",
       },
     ],
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     title: "David Sawe — Senior Full Stack Developer & Design Engineer | Lagos, Nigeria",
     description: "Senior Full Stack Developer & Design Engineer in Lagos, Nigeria. Architecting Next.js, Node.js, AI integrations, UI/UX systems, and payment engines.",
     creator: "@DaWei8",
-    images: ["https://hiredavid.vercel.app/opengraph-image"],
+    images: ["https://hiredavid.vercel.app/og-image.png"],
   },
   alternates: {
     canonical: "https://hiredavid.vercel.app",
