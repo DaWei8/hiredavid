@@ -22,7 +22,7 @@ export default function TechStack() {
   ];
 
   return (
-    <section id="stack" className="py-10 bg-[#f2ede4]  overflow-hidden">
+    <section id="stack" className="py-10 bg-[#f2ede4] overflow-hidden">
       <div className="max-w-7xl flex flex-col items-center mx-auto px-4 sm:px-6 lg:px-8 mb-4">
         <span className="text-xs font-semibold text-stone-500 tracking-widest uppercase">
           Skilled with
