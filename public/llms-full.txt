@@ -1,0 +1,123 @@
+# David Sawe — Complete Technical Profile & Resume Data
+
+## Contact Information
+- Full Name: David Sawe
+- Email: Sawedavid7@gmail.com | davidsawee@outlook.com
+- Phone: +234 705 340 0122 (07053400122)
+- Location: Lagos, Nigeria
+- GitHub: https://github.com/DaWei8
+- LinkedIn: https://linkedin.com/in/david-sawe-38b67a211
+- Portfolio Website: https://hiredavid.vercel.app
+
+## Professional Summary
+Senior Design Engineer and Technology Director with deep experience across full-stack engineering, interface architecture, and product strategy. Proven track record architecting and deploying end-to-end B2B platforms, SaaS products, and distributed web applications with Next.js, TypeScript, and Supabase. Adept at translating complex commercial requirements into resilient technical blueprints, data schemas, and clean, modular systems under 150 lines per module. Strong background leading cross-functional teams, driving product delivery from concept to production, and maintaining rigorous security and design standards.
+
+## Full Technical Skill Matrix
+- Programming & Development: TypeScript, JavaScript, Python, Next.js, React, Node.js, Express, LangChain, Bootstrap, HTML/CSS, Tailwind CSS
+- Payment Gateways & Financial APIs: Paystack, Flutterwave, Monnify, Stripe (Webhooks, Subscriptions, Split Payments, Dynamic Virtual Accounts)
+- AI & LLM Engineering: LLM Integration with APIs, NLP, Context Engineering, Natural Language Processing, Zod Schema Validation, Anthropic API, OpenAI API, Gemini API
+- Databases & Cloud Architecture: PostgreSQL, Supabase, MongoDB, Firebase Authentication, Cloudflare (DNS, R2), Vercel, REST APIs, GraphQL
+- Testing, Quality & Security: Unit Testing, Integration Testing, Jest, Vitest, Row Level Security (RLS), RBAC, BurpSuite, Webhook Verification, Token Authentication
+- Blockchain & Web3: DeFi Analytics, Tokenomics Analysis, Blockchain OSINT Research, On-Chain Intelligence
+- Product Design & Systems: Figma, Framer, Rapid Prototyping, Component Libraries, Design Tokens, UX Research, Heuristic Audits
+- Development & DevOps Tools: Git, GitHub, CI/CD, Version Control, Docker, Playwright, AWS, Azure
+- Business & Productivity Tools: Google Workspace, Microsoft Office Suite, Notion, Airtable, Project Management Software
+- Messaging APIs: WhatsApp Cloud API (Interactive Flows, PDF Receipts)
+
+## Comprehensive Work Experience History
+
+### Founding Engineer & Chief Technology Officer | Uselango
+March 2026 – Present | Lagos, Nigeria
+- Architected the core B2B retail access platform connecting consumer goods producers with retail distribution networks across Nigeria.
+- Built full-stack architecture using Next.js, TypeScript, and Supabase, enforcing strict Row Level Security (RLS) to protect transactional records.
+- Formulated end-to-end Product Requirement Documents (PRDs), database schemas, and application tracking workflows for multi-tier user accounts.
+- Integrated Flutterwave and Paystack payment rails for automated invoice settlements, merchant escrow, and direct payout routing.
+- Configured edge infrastructure on Cloudflare and Vercel, ensuring sub-second response times, DNS resilience, and high availability.
+
+### Founding Engineer | Fidesagro
+January 2026 – Present | Lagos, Nigeria
+- Engineered the core digital agricultural commerce platform, delivering scalable product cataloging and real-time inventory systems.
+- Designed custom, modular order checkout flows and interactive weight/volume selection components to reduce buyer friction.
+- Implemented Monnify dynamic virtual bank accounts and Paystack checkout, providing automated reconciliation for high-volume agro settlements.
+- Hardened transactional integrity with automated unit testing suites, HMAC webhook signature verification, and idempotent background job processing.
+- Optimized database queries and indexed PostgreSQL schemas in Supabase, maintaining fast search and filter performance across product catalogs.
+
+### Chief Executive Officer & Team Lead | Avemas Studio
+December 2025 – Present | Lagos, Nigeria
+- Direct agency operations, client strategy, and technical delivery across multi-client web applications using Next.js, React, and Tailwind CSS.
+- Created modular, reusable UI design systems and design tokens in Figma, cutting engineering handoff and build cycles by 35%.
+- Enforced clean code conventions across client repositories, prioritizing modular file architecture with modules kept strictly under 150 lines.
+- Architected custom billing integrations for agency software clients using Stripe Billing and Flutterwave for cross-border transactions.
+- Supervise multi-disciplinary design and engineering teams across end-to-end client product roadmaps and release cycles.
+
+### Full Stack Developer | Taxculate
+January 2025 – February 2026 | Remote
+- Engineered a U.S. tax calculation and compliance web platform using Next.js, TypeScript, Tailwind CSS, and Supabase.
+- Developed deterministic tax calculation engines validated by rigorous unit tests, handling complex filing tiers with zero calculation drift.
+- Implemented end-to-end Stripe billing integration with recurring subscriptions, tiered pricing models, and webhook payment validation.
+- Built secure user authentication and role-based access control, safeguarding sensitive taxpayer data behind audited API boundaries.
+- Designed landing pages, onboarding wizards, and interactive tax summary dashboards that improved self-serve signup conversion.
+
+### Lead Product Designer | Testbloq
+September 2024 – February 2026 | Remote
+- Directed end-to-end UX/UI product architecture for an AI-powered assessment, proctoring, and grading platform.
+- Built comprehensive design systems, interactive Figma prototypes, and layout tokens matching strict accessibility standards.
+- Authored technical walkthrough scripts, product specifications, and user journey documentation for engineering implementation.
+- Executed continuous user research and heuristic reviews, cutting candidate onboarding drop-offs and test-setup friction by 25%.
+- Partnered with executive leadership to create interactive pitch decks and product demos for institutional stakeholder buy-in.
+
+### Website Designer | Gemspread
+2024 (6 Months) | Remote
+- Designed high-converting, responsive web layouts and landing page systems aligned with brand identity guidelines.
+- Built modular design components and scalable UI patterns in Figma, accelerating rapid prototyping and client review turnaround.
+- Conducted competitor interface benchmarking and user flow audits to eliminate user navigation bottlenecks.
+- Prepared structured developer-ready assets, typography scales, and responsive design specifications for front-end implementation.
+
+### Frontend Developer | NvisionHR
+February 2024 – August 2024 | Lagos, Nigeria
+- Built responsive human resource management web portals and self-service dashboards using React and modern CSS architectures.
+- Integrated complex RESTful API endpoints with client-side state managers, delivering real-time leave tracking and payroll data views.
+- Built dynamic data tables featuring multi-column sorting, paginated record sets, and CSV export capabilities.
+- Conducted cross-browser compatibility testing and mobile responsiveness audits, ensuring consistent performance across all viewports.
+
+### Frontend Developer | Velocit8
+August 2023 – January 2024 | Remote
+- Shipped client-facing web applications focusing on performance optimization, responsive layouts, and cross-browser stability.
+- Refactored monolithic legacy UI components into clean, modular structures, improving maintainability and page load speeds.
+- Implemented version-controlled workflows with Git, managing feature branches, issue tracking, and peer pull requests.
+
+### Product Designer | Zacrac
+February 2023 – September 2023 | Remote
+- Spearheaded user research, workflow wireframing, and interactive UI prototyping for enterprise data analytics products.
+- Collaborated directly with business analysts to map data pipelines into intuitive analytics dashboards and graphical reports.
+- Standardized design components, grid systems, and typography rules in Figma to establish product visual consistency.
+
+### UI/UX Designer | Maze Softwares
+August 2021 – January 2023 | Lagos, Nigeria
+- Designed responsive web layouts, complex dashboard interfaces, and interactive software prototypes across 15+ client projects.
+- Standardized design token architectures and multi-tier Figma design libraries, accelerating engineering implementation timelines.
+
+### Frontend Developer Intern | Xerax Labs
+2020 – 2021 | Lagos, Nigeria
+- Built responsive web interfaces and user-facing components using JavaScript, HTML5, and CSS3.
+- Integrated REST API endpoints with client views, handling dynamic data binding and form input validations.
+
+### Product Design Intern | Stutern
+2021 | Remote
+- Executed end-to-end design thinking sprints from user problem discovery to high-fidelity interactive prototyping.
+- Built structured wireframes, design systems, and clickable prototypes in Figma validated through usability testing sessions.
+
+### Data Science & Machine Learning Intern | Coven Labs
+2018 – 2019 | Remote
+- Performed data ingestion, data cleaning, and exploratory data analysis across structured datasets using Python and Pandas.
+- Built and evaluated baseline supervised machine learning models using Scikit-Learn for predictive classification tasks.
+
+## Education & Qualifications
+- Bachelor of Technology (B.Tech) in Computer Science — Federal University of Technology, Akure (FUTA) (Graduated 2024) | First Class Honours
+- National Youth Service Corps (NYSC) — Completed
+
+## Certifications & Credentials
+- Project Management MSME: ISO 9001:2015 Quality Management System (QMS) Certified
+- Human Resource Management: MSME Certified
+- Product Design Certification: Future Academy Africa
+- Soft Skills Certification: Jobberman Nigeria

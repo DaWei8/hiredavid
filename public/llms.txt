@@ -1,0 +1,33 @@
+# David Sawe — Senior Design Engineer & Technology Director
+
+> Full-Stack Engineering | Interface Architecture | AI & LLM Solutions | Payment Systems Architect
+
+- **Name**: David Sawe
+- **Role**: Senior Design Engineer, Technology Director, CTO & Full-Stack Developer
+- **Location**: Lagos, Nigeria
+- **Email**: Sawedavid7@gmail.com | davidsawee@outlook.com
+- **Phone**: +234 705 340 0122
+- **GitHub**: https://github.com/DaWei8
+- **LinkedIn**: https://linkedin.com/in/david-sawe-38b67a211
+- **Website**: https://hiredavid.vercel.app
+
+## Technical Core & Specializations
+- **Full Stack Web**: Next.js (App Router), TypeScript, React, Node.js, Express.js, Tailwind CSS, REST APIs, GraphQL.
+- **Databases & Security**: PostgreSQL, Supabase (Row Level Security - RLS), MongoDB, Firebase Auth, BurpSuite, HMAC Webhook verification.
+- **FinTech & Payment Rails**: Paystack, Flutterwave, Monnify Dynamic Virtual Accounts, Stripe Subscriptions & Webhooks.
+- **AI & LLM Solutions**: Anthropic API (Claude), OpenAI API (GPT-4), Google Gemini API, LangChain, Context Engineering, Zod Schema Validation.
+- **Product Design & Systems**: Figma, Framer, Component Libraries, Design Tokens, UX Research, Heuristic Audits.
+
+## Current Roles & Key Projects
+- **Uselango** (CTO & Founding Engineer): B2B retail access platform connecting consumer goods producers with retail distribution networks across Nigeria (Next.js, TypeScript, Supabase RLS, Paystack, Flutterwave).
+- **Fidesagro** (Founding Engineer): Digital agricultural commerce platform with real-time inventory and Monnify dynamic virtual accounts.
+- **Avemas Studio** (CEO & Team Lead): Product design & full-stack development agency enforcing <150 line clean modular code conventions.
+- **chat2linkd.in**: WhatsApp/Telegram instant messenger bot turning casual messages into LinkedIn posts using Gemini AI.
+- **fixslop.xyz**: AI text humanizer tool powered by Anthropic Sonnet.
+- **Taxculate**: US Tax calculation and compliance web platform with zero calculation drift.
+
+## Education & Certifications
+- **Education**: Bachelor of Technology (B.Tech) in Computer Science, Federal University of Technology Akure (FUTA), First Class Honours (Class of 2024).
+- **Certifications**: ISO 9001:2015 Quality Management Systems (MSME), Human Resource Management, Product Design (Future Academy Africa), Soft Skills (Jobberman).
+
+For the full detailed curriculum vitae and comprehensive project breakdown, see [llms-full.txt](https://hiredavid.vercel.app/llms-full.txt).
