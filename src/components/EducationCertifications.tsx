@@ -52,17 +52,18 @@ export default function EducationCertifications() {
                 Education
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight mt-2">
-                Credentials
+                Credentials &{" "}
+                <span className="text-stone-500">Certificates</span>
               </h2>
             </div>
 
             {/* Degree */}
-            <div className="p-6 rounded-2xl bg-[#ffffff] border border-[#e7e1d4] shadow-xs">
+            <div className="p-6 rounded-2xl bg-[#ffffff90] border border-[#e7e1d4] shadow-xs">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-10 h-10 rounded-xl bg-[#efe8dc] border border-[#e0d6c5] flex items-center justify-center text-stone-900">
-                  <GraduationCap className="w-5 h-5" />
+                  <GraduationCap className="w-6 h-6 text-amber-800/60" />
                 </div>
-                <span className="px-3 py-1 rounded-full bg-[#efe8dc] border border-[#e0d6c5] text-stone-800 text-xs font-bold">
+                <span className="px-3 py-1 rounded-md text-amber-800/30 bg-[#efe8dc]/50 border border-[#e0d6c5] text-stone-800 text-xs font-bold">
                   FIRST CLASS HONOURS
                 </span>
               </div>
@@ -83,9 +84,9 @@ export default function EducationCertifications() {
               {CERTIFICATIONS.map((cert, idx) => (
                 <div
                   key={idx}
-                  className="p-3 rounded-xl bg-[#ffffff] border border-[#e7e1d4] flex items-center gap-3 shadow-xs"
+                  className="p-3 py-6 rounded-xl bg-[#ffffff90] border border-[#e7e1d4] flex items-start gap-3 shadow-xs"
                 >
-                  <Award className="w-4 h-4 text-stone-700 shrink-0" />
+                  <Award className="w-6 h-6 text-amber-800/30 shrink-0" />
                   <div>
                     <span className="text-sm font-semibold text-stone-800">
                       {cert.title}

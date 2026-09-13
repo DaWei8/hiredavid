@@ -53,7 +53,7 @@ export default function Projects() {
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-3.5 py-1.5 rounded-full text-sm font-medium transition-all ${
+                className={`px-3.5 py-1.5 rounded-md text-sm font-medium transition-all ${
                   selectedCategory === cat
                     ? "bg-stone-900 text-[#faf7f2] font-bold shadow-xs"
                     : "bg-[#faf7f2] text-stone-600 hover:text-stone-900 border border-[#e0d6c5]"
@@ -70,7 +70,7 @@ export default function Projects() {
           {visibleProjects.map((project) => (
             <div
               key={project.id}
-              className="p-4 sm:p-3 rounded-2xl bg-[#ffffff] border border-[#e7e1d4] hover:border-[#c8bfb0] hover:shadow-lg transition-all duration-300 flex flex-col justify-between group shadow-xs"
+              className="p-4 sm:p-3 rounded-2xl bg-[#ffffff]/50 transition-all duration-300 flex flex-col justify-between group shadow-xs"
             >
               <div>
                 {/* Preview Image */}
@@ -82,8 +82,10 @@ export default function Projects() {
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover object-top sepia-[0.60] contrast-[0.96] brightness-[0.50] group-hover:sepia-0 group-hover:contrast-100 group-hover:brightness-100 transition-all duration-500"
                     />
+                    {/* Warm Brown Uniformity Overlay */}
+                    <div className="absolute inset-0 bg-[#885830]/12 mix-blend-multiply group-hover:opacity-0 transition-opacity duration-500 pointer-events-none" />
                     <div className="absolute inset-0 bg-stone-900/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                       <span className="px-3 py-1.5 rounded-lg bg-stone-900 text-[#faf7f2] text-xs font-bold shadow-xs backdrop-blur-xs transform translate-y-2 group-hover:translate-y-0 transition-transform">
                         View Case Study

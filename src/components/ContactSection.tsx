@@ -60,18 +60,18 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="py-24 bg-[#faf7f2] relative overflow-hidden"
+      className="py-24 bg-[#0b0602] text-stone-100 relative overflow-hidden border-t border-stone-800"
     >
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-dot-pattern opacity-40 pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#e6dbc8]/40 rounded-full blur-3xl pointer-events-none animate-blob" />
+      {/* Background Line Pattern & Ambient Glow */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#38353325_1px,transparent_1px),linear-gradient(to_bottom,#38353325_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-stone-700/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-stone-100 tracking-tight">
             Get In Touch
           </h2>
-          <p className="text-stone-600 text-base mt-2">
+          <p className="text-stone-400 text-base mt-2">
             Available for Full-Stack Engineering & Product Design roles.
           </p>
         </div>
@@ -80,17 +80,17 @@ export default function ContactSection() {
         <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
           <button
             onClick={() => copyToClipboard(PERSONAL_INFO.email)}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-md bg-[#ffffff] border border-[#e7e1d4] hover:border-[#c8bfb0] text-sm text-stone-800 shadow-xs transition-colors"
+            className="flex items-center gap-2 px-4 py-2.5 lowercase rounded-md bg-[#292524] border border-stone-700 hover:border-stone-500 text-sm text-stone-200 shadow-sm transition-colors cursor-pointer"
           >
-            <Mail className="w-4 h-4 text-stone-800" />
+            <Mail className="w-4 h-4 text-stone-300" />
             <span>{PERSONAL_INFO.email}</span>
             {copiedEmail ? (
-              <Check className="w-3.5 h-3.5 text-stone-800" />
+              <Check className="w-3.5 h-3.5 text-emerald-400" />
             ) : (
               <Copy className="w-3.5 h-3.5 text-stone-400" />
             )}
           </button>
-          <span className="flex items-center gap-2 px-4 py-2.5 rounded-md bg-[#ffffff] border border-[#e7e1d4] text-sm text-stone-800 shadow-xs">
+          <span className="flex items-center gap-2 px-4 py-2.5 rounded-md bg-[#292524] border border-stone-700 text-sm text-stone-200 shadow-sm">
             <MapPin className="w-4 h-4 text-stone-400" />
             {PERSONAL_INFO.location}
           </span>
@@ -98,37 +98,37 @@ export default function ContactSection() {
             href={PERSONAL_INFO.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2.5 rounded-md bg-[#ffffff] border border-[#e7e1d4] hover:border-[#c8bfb0] text-sm text-stone-800 shadow-xs transition-colors"
+            className="flex items-center gap-2 px-4 py-2.5 rounded-md bg-[#292524] border border-stone-700 hover:border-stone-500 text-sm text-stone-200 shadow-sm transition-colors"
           >
-            <GithubIcon className="w-4 h-4" /> GitHub
+            <GithubIcon className="w-4 h-4 text-stone-200" /> GitHub
           </a>
           <a
             href={PERSONAL_INFO.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2.5 rounded-md bg-[#ffffff] border border-[#e7e1d4] hover:border-[#c8bfb0] text-sm text-stone-800 shadow-xs transition-colors"
+            className="flex items-center gap-2 px-4 py-2.5 rounded-md bg-[#292524] border border-stone-700 hover:border-stone-500 text-sm text-stone-200 shadow-sm transition-colors"
           >
-            <LinkedinIcon className="w-4 h-4 text-stone-800" /> LinkedIn
+            <LinkedinIcon className="w-4 h-4 text-stone-200" /> LinkedIn
           </a>
         </div>
 
-        {/* Simple Form */}
-        <div className="p-6 sm:p-8 rounded-2xl bg-[#ffffff] border border-[#e7e1d4] shadow-xs">
+        {/* Dark Form Card */}
+        <div className="p-6 sm:p-8 rounded-2xl bg-[#292524] border border-stone-700/80 shadow-xl">
           {submitted ? (
             <div className="py-8 text-center space-y-3 animate-fade-in">
-              <div className="w-12 h-12 rounded-full bg-[#efe8dc] text-stone-900 mx-auto flex items-center justify-center border border-[#e0d6c5]">
-                <Check className="w-6 h-6" />
+              <div className="w-12 h-12 rounded-full bg-stone-800 text-stone-100 mx-auto flex items-center justify-center border border-stone-600">
+                <Check className="w-6 h-6 text-emerald-400" />
               </div>
-              <h3 className="text-xl font-bold text-stone-900">
+              <h3 className="text-xl font-bold text-stone-100">
                 Message Sent!
               </h3>
-              <p className="text-sm text-stone-500">
+              <p className="text-sm text-stone-400">
                 I&apos;ll get back to you within 12 hours at
                 sawedavid7@gmail.com.
               </p>
               <button
                 onClick={() => setSubmitted(false)}
-                className="text-sm text-stone-900 font-semibold hover:underline"
+                className="text-sm text-stone-200 font-semibold hover:underline"
               >
                 Send another
               </button>
@@ -136,7 +136,7 @@ export default function ContactSection() {
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
               {errorMessage && (
-                <div className="p-3.5 rounded-md bg-red-50 border border-red-200 text-red-700 text-xs font-medium">
+                <div className="p-3.5 rounded-md bg-red-950/80 border border-red-800 text-red-300 text-xs font-medium">
                   {errorMessage}
                 </div>
               )}
@@ -144,7 +144,7 @@ export default function ContactSection() {
                 <div>
                   <label
                     htmlFor="contact-name"
-                    className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1.5"
+                    className="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-1.5"
                   >
                     Name
                   </label>
@@ -157,13 +157,13 @@ export default function ContactSection() {
                       setFormData({ ...formData, name: e.target.value })
                     }
                     placeholder="e.g. Sarah Jenkins"
-                    className="w-full px-4 py-3 rounded-md bg-[#fcfbfa] border border-[#e7e1d4] text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-900 text-sm"
+                    className="w-full px-4 py-3 rounded-md bg-[#1c1917] border border-stone-700 text-stone-100 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-400/20 focus:border-stone-300 text-sm"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="contact-email"
-                    className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1.5"
+                    className="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-1.5"
                   >
                     Email Address
                   </label>
@@ -176,14 +176,14 @@ export default function ContactSection() {
                       setFormData({ ...formData, email: e.target.value })
                     }
                     placeholder="e.g. sarah@company.com"
-                    className="w-full px-4 py-3 rounded-md bg-[#fcfbfa] border border-[#e7e1d4] text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-900 text-sm"
+                    className="w-full px-4 py-3 rounded-md bg-[#1c1917] border border-stone-700 text-stone-100 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-400/20 focus:border-stone-300 text-sm"
                   />
                 </div>
               </div>
               <div>
                 <label
                   htmlFor="contact-message"
-                  className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1.5"
+                  className="block text-xs font-bold uppercase tracking-wider text-stone-300 mb-1.5"
                 >
                   Project Details / Message
                 </label>
@@ -196,13 +196,13 @@ export default function ContactSection() {
                     setFormData({ ...formData, message: e.target.value })
                   }
                   placeholder="Tell me about your project, timeline, or engineering role..."
-                  className="w-full px-4 py-3 rounded-md bg-[#fcfbfa] border border-[#e7e1d4] text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-900 text-sm resize-none"
+                  className="w-full px-4 py-3 rounded-md bg-[#1c1917] border border-stone-700 text-stone-100 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-400/20 focus:border-stone-300 text-sm resize-none"
                 />
               </div>
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-3 rounded-md bg-stone-900 hover:bg-stone-800 disabled:opacity-50 text-[#faf7f2] text-sm font-bold shadow-xs transition-all flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full py-3.5 rounded-md bg-stone-100 hover:bg-white text-stone-950 text-sm font-bold shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
               >
                 {isSubmitting ? (
                   <span>Sending email...</span>
