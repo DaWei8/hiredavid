@@ -14,21 +14,30 @@ export default function Hero({ onOpenResume }: HeroProps) {
       <div className="absolute inset-0 bg-grid-pattern opacity-60 pointer-events-none" />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-6 max-w-3xl">
-          {/* Name Badge */}
-          <div className="inline-flex items-center gap-2 w-fit px-3 py-1.5 rounded-md bg-[#efe8dc] border border-[#e0d6c5] text-stone-800 text-xs font-semibold uppercase tracking-wider">
+          {/* Name & Location Badge */}
+          <div className="inline-flex items-center gap-2 w-fit px-3.5 py-1.5 rounded-md bg-[#efe8dc] border border-[#e0d6c5] text-stone-800 text-xs font-bold uppercase tracking-wider">
             <span className="w-2 h-2 rounded-xs bg-stone-900 animate-pulse" />
-            David Sawe
+            David Sawe • Senior Full Stack Developer & Design Engineer in Lagos, Nigeria
           </div>
-          {/* Title */}
+
+          {/* H1 Title for SEO & GEO */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-stone-900 tracking-tight leading-[1.08]">
             Design & Full Stack Engineer{" "}
             <span className="text-stone-500">+ AI Solutions</span>
           </h1>
 
-          {/* Short Description */}
+          {/* Search Optimized Description */}
           <p className="text-lg text-stone-600 leading-relaxed max-w-2xl">
-            {PERSONAL_INFO.tagline}
+            Senior Full Stack Engineer & Product Designer in Lagos, Nigeria. Specializing in high-performance Next.js architectures, intuitive UI/UX design systems, AI integrations, and resilient payment gateways (Paystack, Flutterwave, Stripe).
           </p>
+
+          {/* Skill Pills for Crawlers & Visitors */}
+          <div className="flex flex-wrap items-center gap-2 pt-1">
+            <span className="px-3 py-1 text-xs font-semibold rounded-md bg-[#ffffff] border border-[#e7e1d4] text-stone-700">⚡ Full-Stack Web Development</span>
+            <span className="px-3 py-1 text-xs font-semibold rounded-md bg-[#ffffff] border border-[#e7e1d4] text-stone-700">🎨 Product Design & UI/UX</span>
+            <span className="px-3 py-1 text-xs font-semibold rounded-md bg-[#ffffff] border border-[#e7e1d4] text-stone-700">🤖 AI & LLM Integrations</span>
+            <span className="px-3 py-1 text-xs font-semibold rounded-md bg-[#ffffff] border border-[#e7e1d4] text-stone-700">💳 Payment Infrastructure</span>
+          </div>
 
           {/* CTAs */}
           <div className="flex flex-wrap items-center gap-4 pt-2">

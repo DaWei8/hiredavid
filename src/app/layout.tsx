@@ -53,19 +53,15 @@ export const metadata: Metadata = {
     apple: "/image.png",
   },
   openGraph: {
-    type: "profile",
+    type: "website",
     locale: "en_US",
     url: "https://hiredavid.vercel.app",
-    title: "David Sawe — Senior Full Stack Developer & Design Engineer in Lagos, Nigeria",
-    description: "Premier Senior Full Stack Developer & Design Engineer based in Lagos, Nigeria. Architecting Next.js, Supabase, Payment Systems & LLM products.",
-    siteName: "Hire David Sawe — Lagos, Nigeria",
-    firstName: "David",
-    lastName: "Sawe",
-    username: "DaWei8",
-    gender: "male",
+    title: "David Sawe — Senior Full Stack Developer & Design Engineer | Lagos, Nigeria",
+    description: "Senior Full Stack Developer & Design Engineer in Lagos, Nigeria. 6+ years experience architecting Next.js, Node.js, AI LLM products, UI/UX design systems, and resilient payment gateways (Paystack, Flutterwave, Stripe).",
+    siteName: "David Sawe Portfolio — Full Stack & Design Engineer",
     images: [
       {
-        url: "/opengraph-image",
+        url: "https://hiredavid.vercel.app/opengraph-image",
         width: 1200,
         height: 630,
         alt: "David Sawe — Senior Full Stack Developer & Design Engineer in Lagos, Nigeria",
@@ -74,10 +70,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "David Sawe — Senior Full Stack Developer in Lagos, Nigeria",
-    description: "Senior Full Stack Developer & Design Engineer in Lagos, Nigeria. Architecting high-scale Next.js, Supabase, Payment Systems & AI products.",
+    title: "David Sawe — Senior Full Stack Developer & Design Engineer | Lagos, Nigeria",
+    description: "Senior Full Stack Developer & Design Engineer in Lagos, Nigeria. Architecting Next.js, Node.js, AI integrations, UI/UX systems, and payment engines.",
     creator: "@DaWei8",
-    images: ["/opengraph-image"],
+    images: ["https://hiredavid.vercel.app/opengraph-image"],
   },
   alternates: {
     canonical: "https://hiredavid.vercel.app",

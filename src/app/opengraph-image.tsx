@@ -22,9 +22,10 @@ export default async function Image() {
           alignItems: "flex-start",
           justifyContent: "space-between",
           backgroundColor: "#faf7f2",
-          padding: "60px",
+          padding: "50px 56px",
           fontFamily: "sans-serif",
           position: "relative",
+          boxSizing: "border-box",
         }}
       >
         {/* Subtle grid pattern background */}
@@ -33,12 +34,12 @@ export default async function Image() {
             position: "absolute",
             inset: 0,
             backgroundImage: "radial-gradient(#e7e1d4 1.5px, transparent 1.5px)",
-            backgroundSize: "24px 24px",
+            backgroundSize: "28px 28px",
             opacity: 0.6,
           }}
         />
 
-        {/* Top Header Row */}
+        {/* Top Branding Header */}
         <div
           style={{
             display: "flex",
@@ -48,36 +49,30 @@ export default async function Image() {
             zIndex: 10,
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "16px",
-            }}
-          >
+          <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
             <div
               style={{
-                width: "60px",
-                height: "60px",
-                borderRadius: "12px",
+                width: "58px",
+                height: "58px",
+                borderRadius: "14px",
                 backgroundColor: "#1c1917",
                 color: "#faf7f2",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                fontSize: "26px",
-                fontWeight: "bold",
-                boxShadow: "0 4px 12px rgba(0,0,0,0.12)",
+                fontSize: "24px",
+                fontWeight: "800",
+                boxShadow: "0 4px 14px rgba(0,0,0,0.15)",
               }}
             >
               DS
             </div>
             <div style={{ display: "flex", flexDirection: "column" }}>
-              <span style={{ fontSize: "28px", fontWeight: "800", color: "#1c1917" }}>
+              <span style={{ fontSize: "28px", fontWeight: "800", color: "#1c1917", letterSpacing: "-0.5px" }}>
                 David Sawe
               </span>
-              <span style={{ fontSize: "18px", fontWeight: "600", color: "#78716c" }}>
-                hiredavid.vercel.app
+              <span style={{ fontSize: "16px", fontWeight: "600", color: "#78716c" }}>
+                Lagos, Nigeria • hiredavid.vercel.app
               </span>
             </div>
           </div>
@@ -86,100 +81,126 @@ export default async function Image() {
             style={{
               display: "flex",
               alignItems: "center",
-              gap: "10px",
+              gap: "8px",
               backgroundColor: "#efe8dc",
               border: "1px solid #e0d6c5",
-              padding: "10px 20px",
+              padding: "8px 18px",
               borderRadius: "9999px",
-              fontSize: "16px",
-              fontWeight: "600",
+              fontSize: "15px",
+              fontWeight: "700",
               color: "#44403c",
             }}
           >
-            <div
-              style={{
-                width: "10px",
-                height: "10px",
-                borderRadius: "9999px",
-                backgroundColor: "#16a34a",
-              }}
-            />
-            Available for Senior & CTO Roles
+            <div style={{ width: "8px", height: "8px", borderRadius: "9999px", backgroundColor: "#16a34a" }} />
+            Open for Senior & CTO Roles
           </div>
         </div>
 
-        {/* Hero Main Content */}
+        {/* Main Title & Core Mission Statement */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: "16px",
-            maxWidth: "950px",
+            gap: "12px",
+            maxWidth: "1080px",
             zIndex: 10,
-            marginTop: "20px",
           }}
         >
           <div
             style={{
-              display: "flex",
-              fontSize: "18px",
-              fontWeight: "700",
-              color: "#854d0e",
-              letterSpacing: "1.5px",
-              textTransform: "uppercase",
-            }}
-          >
-            Lagos, Nigeria • Senior Full Stack & Design Engineer
-          </div>
-
-          <div
-            style={{
-              fontSize: "52px",
+              fontSize: "44px",
               fontWeight: "900",
               color: "#1c1917",
-              lineHeight: 1.1,
+              lineHeight: 1.15,
               letterSpacing: "-1px",
             }}
           >
-            Design & Full Stack Engineer + AI Solutions
+            Senior Full Stack Developer & Design Engineer
           </div>
-
-          <div
-            style={{
-              fontSize: "22px",
-              color: "#57534e",
-              lineHeight: 1.4,
-              marginTop: "4px",
-            }}
-          >
-            Architecting scalable web applications, AI integrations, payment engines (Paystack, Flutterwave, Stripe), and slick user interfaces.
+          <div style={{ fontSize: "20px", color: "#57534e", lineHeight: 1.45 }}>
+            Bridging pixel-perfect UI/UX design with high-scale backend systems, AI integrations (LLMs), enterprise SaaS, and resilient payment engines.
           </div>
         </div>
 
-        {/* Bottom Tech Stack Badges */}
+        {/* Two Pillar Breakdown: Full-Stack vs Product Design */}
+        <div
+          style={{
+            display: "flex",
+            gap: "24px",
+            width: "100%",
+            zIndex: 10,
+          }}
+        >
+          {/* Pillar 1: Full-Stack Engineering */}
+          <div
+            style={{
+              flex: 1,
+              backgroundColor: "#1c1917",
+              color: "#faf7f2",
+              padding: "20px 24px",
+              borderRadius: "16px",
+              display: "flex",
+              flexDirection: "column",
+              gap: "8px",
+              boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
+            }}
+          >
+            <div style={{ fontSize: "14px", fontWeight: "800", color: "#e7e1d4", textTransform: "uppercase", letterSpacing: "1px" }}>
+              ⚡ Full-Stack Engineering
+            </div>
+            <div style={{ fontSize: "16px", fontWeight: "700", color: "#faf7f2" }}>
+              Next.js 16 • TypeScript • Node.js • Supabase • PostgreSQL
+            </div>
+            <div style={{ fontSize: "14px", color: "#a8a29e", lineHeight: 1.35 }}>
+              Architecting microservices, AI integrations, REST/GraphQL APIs, and payment systems (Paystack, Flutterwave, Stripe).
+            </div>
+          </div>
+
+          {/* Pillar 2: Product Design & UI/UX */}
+          <div
+            style={{
+              flex: 1,
+              backgroundColor: "#ffffff",
+              border: "1.5px solid #e7e1d4",
+              color: "#1c1917",
+              padding: "20px 24px",
+              borderRadius: "16px",
+              display: "flex",
+              flexDirection: "column",
+              gap: "8px",
+              boxShadow: "0 4px 16px rgba(0,0,0,0.04)",
+            }}
+          >
+            <div style={{ fontSize: "14px", fontWeight: "800", color: "#854d0e", textTransform: "uppercase", letterSpacing: "1px" }}>
+              🎨 Product Design & UI/UX
+            </div>
+            <div style={{ fontSize: "16px", fontWeight: "700", color: "#1c1917" }}>
+              Design Systems • Wireframing • Figma • Micro-Animations
+            </div>
+            <div style={{ fontSize: "14px", color: "#57534e", lineHeight: 1.35 }}>
+              Crafting intuitive user journeys, responsive glassmorphism interfaces, web accessibility, and high-conversion UX design.
+            </div>
+          </div>
+        </div>
+
+        {/* Footer Bar */}
         <div
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "12px",
+            justifyContent: "space-between",
+            width: "100%",
             zIndex: 10,
+            borderTop: "1px solid #e7e1d4",
+            paddingTop: "16px",
+            fontSize: "14px",
+            fontWeight: "600",
+            color: "#78716c",
           }}
         >
-          {["Next.js", "TypeScript", "Node.js", "AI / LLMs", "Supabase", "Tailwind CSS"].map((tech) => (
-            <div
-              key={tech}
-              style={{
-                backgroundColor: "#1c1917",
-                color: "#faf7f2",
-                padding: "8px 18px",
-                borderRadius: "8px",
-                fontSize: "16px",
-                fontWeight: "600",
-              }}
-            >
-              {tech}
-            </div>
-          ))}
+          <span>https://hiredavid.vercel.app</span>
+          <span>sawedavid7@gmail.com</span>
+          <span>Nigeria & Remote Worldwide</span>
         </div>
       </div>
     ),

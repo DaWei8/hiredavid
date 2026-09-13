@@ -18,12 +18,48 @@ export default function ExperienceTimeline() {
             — Practical Career & Leadership Experience
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-stone-900 tracking-tight">
-            Professional Experience
+            Professional Experience & Skillsets
           </h2>
           <p className="text-stone-600 text-base max-w-2xl mt-1">
-            Proven track record founding tech companies, leading engineering
-            teams, and shipping production-grade B2B systems.
+            Proven track record founding tech companies, leading engineering teams, shipping production-grade B2B systems, and crafting world-class UI/UX product designs.
           </p>
+        </div>
+
+        {/* Dual Core Competencies Overview Card for SEO & Search Engine Indexing */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+          <div className="p-6 rounded-2xl bg-[#ffffff] border border-[#e7e1d4] shadow-xs space-y-3">
+            <div className="flex items-center gap-2">
+              <span className="p-2 rounded-lg bg-stone-900 text-[#faf7f2] text-xs font-extrabold">⚡</span>
+              <h3 className="text-lg font-extrabold text-stone-900">Full-Stack Software Engineering</h3>
+            </div>
+            <p className="text-sm text-stone-600 leading-relaxed">
+              Architecting secure, high-scale web platforms using Next.js 16, TypeScript, Node.js, and PostgreSQL. Specialized in resilient payment engine integrations (Paystack, Flutterwave, Stripe), AI/LLM applications, and cloud microservices.
+            </p>
+            <div className="flex flex-wrap gap-1.5 pt-1">
+              {["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Supabase", "REST/GraphQL", "Paystack", "Flutterwave", "Stripe", "AI/LLMs"].map((tech) => (
+                <span key={tech} className="px-2.5 py-0.5 rounded bg-[#efe8dc] border border-[#e0d6c5] text-xs font-semibold text-stone-800">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-[#ffffff] border border-[#e7e1d4] shadow-xs space-y-3">
+            <div className="flex items-center gap-2">
+              <span className="p-2 rounded-lg bg-[#854d0e] text-[#faf7f2] text-xs font-extrabold">🎨</span>
+              <h3 className="text-lg font-extrabold text-stone-900">Product Design & Design Engineering</h3>
+            </div>
+            <p className="text-sm text-stone-600 leading-relaxed">
+              Transforming complex workflows into elegant, intuitive digital interfaces. Expertise in Figma design systems, interactive prototyping, glassmorphism, responsive micro-animations, and WCAG web accessibility (a11y).
+            </p>
+            <div className="flex flex-wrap gap-1.5 pt-1">
+              {["Figma", "UI/UX Architecture", "Design Systems", "Glassmorphism", "Micro-Animations", "a11y / Accessibility", "Responsive UX"].map((skill) => (
+                <span key={skill} className="px-2 py-0.5 rounded bg-[#f4efe6] border border-[#e0d6c5] text-xs font-semibold text-stone-800">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Timeline List */}
