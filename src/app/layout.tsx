@@ -1,20 +1,16 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { generatePersonJsonLd, generateWebSiteJsonLd, generateProfilePageJsonLd } from "@/lib/seo";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const plusJakarta = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const viewport: Viewport = {
-  themeColor: "#080c14",
+  themeColor: "#FFFFFF",
   width: "device-width",
   initialScale: 1,
 };
@@ -97,7 +93,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} dark scroll-smooth`}
+      className={`${plusJakarta.variable} scroll-smooth`}
     >
       <head>
         <script
@@ -114,7 +110,7 @@ export default function RootLayout({
         />
         <link rel="author" href="/llms.txt" />
       </head>
-      <body className="min-h-screen bg-[#080c14] text-slate-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-200">
+      <body className="min-h-screen bg-[#faf7f2] text-stone-900 antialiased selection:bg-[#e7e1d4] selection:text-stone-900">
         {children}
       </body>
     </html>

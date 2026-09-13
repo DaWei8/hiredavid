@@ -22,8 +22,6 @@
 - **Uselango** (CTO & Founding Engineer): B2B retail access platform connecting consumer goods producers with retail distribution networks across Nigeria (Next.js, TypeScript, Supabase RLS, Paystack, Flutterwave).
 - **Fidesagro** (Founding Engineer): Digital agricultural commerce platform with real-time inventory and Monnify dynamic virtual accounts.
 - **Avemas Studio** (CEO & Team Lead): Product design & full-stack development agency enforcing <150 line clean modular code conventions.
-- **chat2linkd.in**: WhatsApp/Telegram instant messenger bot turning casual messages into LinkedIn posts using Gemini AI.
-- **fixslop.xyz**: AI text humanizer tool powered by Anthropic Sonnet.
 - **Taxculate**: US Tax calculation and compliance web platform with zero calculation drift.
 
 ## Education & Certifications

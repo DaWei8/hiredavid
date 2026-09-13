@@ -10,6 +10,7 @@ export interface Project {
   featured: boolean;
   role?: string;
   impact?: string;
+  image?: string;
 }
 
 export interface Experience {
@@ -70,6 +71,34 @@ export const SKILL_CATEGORIES = {
 
 export const PROJECTS: Project[] = [
   {
+    id: "stem",
+    title: "STEM Software Testing & Engineering Manager",
+    category: "Full Stack & B2B",
+    description: "Smart workspace to design, model, and test software architecture before building with Rust/WASM simulation.",
+    detailedOverview: "Architected a deterministic software design environment featuring a Visual Logic Engine, unified variable registry, WASM-compiled Rust logic simulation core, and automated security path auditing.",
+    tags: ["Next.js", "TypeScript", "Rust", "WASM", "Supabase", "System Architecture"],
+    liveUrl: "https://stem-arch.vercel.app/",
+    githubUrl: "https://github.com/DaWei8",
+    featured: true,
+    role: "System Architect & Fullstack Developer",
+    impact: "Deterministic logic validation and instant manifest/boilerplate exports for mission-critical software.",
+    image: "/projects/stem.png"
+  },
+  {
+    id: "phasely",
+    title: "Phasely AI Learning Planner",
+    category: "AI & LLM",
+    description: "AI-powered personalized learning schedule creator with Google Calendar integration and Telegram reminders.",
+    detailedOverview: "Architected an intelligent learning management SaaS that transforms user goals into structured study calendars, featuring drag-and-drop schedule management, Telegram reminders, Google Calendar sync, and habit progress analytics.",
+    tags: ["Next.js", "TypeScript", "AI Planning", "Google Calendar API", "Telegram Bot API", "Tailwind CSS"],
+    liveUrl: "https://phasely.vercel.app/",
+    githubUrl: "https://github.com/DaWei8",
+    featured: true,
+    role: "Fullstack Developer",
+    impact: "Empowering learners worldwide with structured AI study schedules and automated habit tracking.",
+    image: "/projects/phasely.png"
+  },
+  {
     id: "uselango",
     title: "Uselango Retail Access Platform",
     category: "Full Stack & B2B",
@@ -80,20 +109,8 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/DaWei8",
     featured: true,
     role: "Founding Engineer & CTO",
-    impact: "Automated FMCG invoice settlements & escrow for 100+ distribution routes."
-  },
-  {
-    id: "chat2linkd",
-    title: "chat2linkd.in — Instant Messenger Bot",
-    category: "AI & LLM",
-    description: "WhatsApp & Telegram bot that transforms casual voice/text notes into polished LinkedIn thought leadership posts.",
-    detailedOverview: "Integrates messaging webhook APIs with Google Gemini LLMs to parse context, format markdown headers, and automatically publish posts directly to LinkedIn profiles without leaving WhatsApp.",
-    tags: ["React", "Node.js", "PostgreSQL", "Gemini API", "WhatsApp Cloud API"],
-    liveUrl: "https://chat2linkd.in",
-    githubUrl: "https://github.com/DaWei8",
-    featured: true,
-    role: "Full Stack AI Engineer",
-    impact: "Saved creators 5+ hours weekly in personal branding content generation."
+    impact: "Automated FMCG invoice settlements & escrow for 100+ distribution routes.",
+    image: "/projects/uselango.png"
   },
   {
     id: "fidesagro",
@@ -106,20 +123,8 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/DaWei8",
     featured: true,
     role: "Founding Engineer",
-    impact: "Zero reconciliation errors on multi-million Naira produce transactions."
-  },
-  {
-    id: "fixslop",
-    title: "fixslop.xyz — AI Text Humanizer",
-    category: "AI & LLM",
-    description: "Full-stack AI tool that detects and refines generic 'AI slop' content into crisp, human-grade prose.",
-    detailedOverview: "Uses Anthropic Sonnet API with custom context engineering rules to strip out cliché buzzwords, structural repetitive patterns, and synthetic phrasing.",
-    tags: ["React", "Node.js", "Anthropic Sonnet", "PostgreSQL", "Tailwind CSS"],
-    liveUrl: "https://fixslop.xyz",
-    githubUrl: "https://github.com/DaWei8",
-    featured: true,
-    role: "Creator & Lead Dev",
-    impact: "99% human-style score output with real-time diff preview."
+    impact: "Zero reconciliation errors on multi-million Naira produce transactions.",
+    image: "/projects/fidesagro.png"
   },
   {
     id: "taxculate",
@@ -132,20 +137,8 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/DaWei8/taxculate",
     featured: true,
     role: "Full Stack Developer",
-    impact: "Handled multi-state US tax filings with 100% calculation accuracy."
-  },
-  {
-    id: "coverletterwhiz",
-    title: "Cover Letter Whiz",
-    category: "AI & LLM",
-    description: "AI generator that builds tailored, job-winning cover letters based on resume analysis & job descriptions.",
-    detailedOverview: "Leverages OpenAI & Gemini APIs with custom prompts to produce highly specific, non-generic cover letters matched against resume bullet points.",
-    tags: ["React", "Node.js", "AWS", "Gemini API", "Tailwind CSS"],
-    liveUrl: "https://coverletterwhiz.com",
-    githubUrl: "https://github.com/DaWei8",
-    featured: true,
-    role: "Full Stack Engineer",
-    impact: "Helped 1,000+ job seekers double interview callback rates."
+    impact: "Handled multi-state US tax filings with 100% calculation accuracy.",
+    image: "/projects/taxculate.png"
   },
   {
     id: "testbloq",
@@ -158,7 +151,8 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/DaWei8",
     featured: false,
     role: "Lead Product Designer",
-    impact: "Reduced onboarding friction & drop-offs by 25%."
+    impact: "Reduced onboarding friction & drop-offs by 25%.",
+    image: "/projects/testbloq.png"
   },
   {
     id: "bitchant",
@@ -170,7 +164,8 @@ export const PROJECTS: Project[] = [
     liveUrl: "https://www.behance.net/gallery/168303103/Bitchant",
     githubUrl: "https://www.behance.net/gallery/168303103/Bitchant",
     featured: false,
-    role: "Product Designer"
+    role: "Product Designer",
+    image: "/projects/bitchant.png"
   },
   {
     id: "servvmarketplace",
@@ -194,7 +189,8 @@ export const PROJECTS: Project[] = [
     liveUrl: "https://publishing.gemspread.com/",
     githubUrl: "https://publishing.gemspread.com/",
     featured: false,
-    role: "Website Designer"
+    role: "Website Designer",
+    image: "/projects/gemspread.png"
   },
   {
     id: "readtoimpact",
@@ -206,7 +202,8 @@ export const PROJECTS: Project[] = [
     liveUrl: "https://www.behance.net/gallery/168286213/Landing-Page-Design",
     githubUrl: "https://www.behance.net/gallery/168286213/Landing-Page-Design",
     featured: false,
-    role: "UI/UX Designer"
+    role: "UI/UX Designer",
+    image: "/projects/readtoimpact.png"
   },
   {
     id: "deaconfx",
@@ -218,7 +215,8 @@ export const PROJECTS: Project[] = [
     liveUrl: "https://www.behance.net/gallery/173220427/DFx-UX-Case-study",
     githubUrl: "https://www.behance.net/gallery/173220427/DFx-UX-Case-study",
     featured: false,
-    role: "Product Designer"
+    role: "Product Designer",
+    image: "/projects/deaconfx.png"
   }
 ];
 
