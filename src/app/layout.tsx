@@ -47,6 +47,11 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  icons: {
+    icon: "/image.png",
+    shortcut: "/image.png",
+    apple: "/image.png",
+  },
   openGraph: {
     type: "profile",
     locale: "en_US",
@@ -58,12 +63,21 @@ export const metadata: Metadata = {
     lastName: "Sawe",
     username: "DaWei8",
     gender: "male",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "David Sawe — Senior Full Stack Developer & Design Engineer in Lagos, Nigeria",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "David Sawe — Senior Full Stack Developer in Lagos, Nigeria",
     description: "Senior Full Stack Developer & Design Engineer in Lagos, Nigeria. Architecting high-scale Next.js, Supabase, Payment Systems & AI products.",
     creator: "@DaWei8",
+    images: ["/opengraph-image"],
   },
   alternates: {
     canonical: "https://hiredavid.vercel.app",
