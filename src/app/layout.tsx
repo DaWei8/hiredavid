@@ -125,6 +125,9 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(profilePageJsonLd) }}
         />
+        <link rel="icon" href="/image.png" type="image/png" sizes="any" />
+        <link rel="shortcut icon" href="/image.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/image.png" />
         <link rel="author" href="/llms.txt" />
       </head>
       <body className="min-h-screen bg-[#faf7f2] text-stone-900 antialiased selection:bg-[#e7e1d4] selection:text-stone-900">
