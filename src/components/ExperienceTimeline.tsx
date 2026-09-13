@@ -32,7 +32,7 @@ export default function ExperienceTimeline() {
               <div key={exp.id} className="relative pl-6 sm:pl-10 group">
                 
                 {/* Timeline Dot Node */}
-                <div className={`absolute -left-[9px] top-1.5 w-4 h-4 rounded-full border-2 transition-all ${
+                <div className={`absolute -left-2.25 top-1.5 w-4 h-4 rounded-full border-2 transition-all ${
                   exp.isCurrent
                     ? 'bg-stone-900 border-stone-900'
                     : 'bg-[#faf7f2] border-[#c8bfb0] group-hover:border-stone-900'

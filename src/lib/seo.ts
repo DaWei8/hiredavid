@@ -6,17 +6,41 @@ export function generatePersonJsonLd() {
     "@type": "Person",
     "@id": "https://hiredavid.vercel.app/#person",
     "name": PERSONAL_INFO.name,
-    "alternateName": ["DaWei8", "David Sawe Lagos", "David Sawe CTO"],
-    "jobTitle": PERSONAL_INFO.headline,
-    "description": PERSONAL_INFO.summary,
+    "alternateName": [
+      "David Sawe",
+      "David Sawe Lagos",
+      "Full Stack Developer in Nigeria",
+      "Full Stack Developer in Lagos",
+      "Fullstack Developer Lagos",
+      "Senior Software Engineer Lagos",
+      "Design Engineer Nigeria",
+      "CTO Uselango"
+    ],
+    "jobTitle": "Senior Full Stack Developer & Design Engineer",
+    "description": "David Sawe is a top Senior Full Stack Developer and Design Engineer based in Lagos, Nigeria. Specializing in Next.js, TypeScript, AI integrations, B2B SaaS architecture, and resilient payment systems.",
     "url": "https://hiredavid.vercel.app",
     "email": `mailto:${PERSONAL_INFO.email}`,
     "telephone": PERSONAL_INFO.phone,
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Lagos",
-      "addressCountry": "Nigeria"
+      "addressRegion": "Lagos State",
+      "addressCountry": "NG"
     },
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Lagos, Nigeria"
+      },
+      {
+        "@type": "Country",
+        "name": "Nigeria"
+      },
+      {
+        "@type": "Place",
+        "name": "Global / Remote"
+      }
+    ],
     "alumniOf": {
       "@type": "EducationalOrganization",
       "name": PERSONAL_INFO.institution,
@@ -29,14 +53,15 @@ export function generatePersonJsonLd() {
       "https://hiredavid.vercel.app"
     ],
     "knowsAbout": [
-      "Full-Stack Web Engineering",
-      "TypeScript & Next.js App Router",
-      "AI & LLM Integration (Anthropic, OpenAI, Gemini)",
+      "Full Stack Developer in Nigeria",
+      "Full Stack Developer in Lagos",
+      "Next.js App Router & React Architecture",
+      "TypeScript & Node.js Backend Development",
+      "AI & LLM Integration (Anthropic Claude, OpenAI GPT-4, Gemini)",
       "Supabase & Row Level Security (RLS)",
-      "Financial APIs & Payment Rails (Paystack, Flutterwave, Monnify, Stripe)",
-      "System Architecture & Data Modeling",
-      "UI/UX Design Systems & Figma",
-      "B2B SaaS Product Development"
+      "FinTech & Payment Rails (Paystack, Flutterwave, Monnify, Stripe)",
+      "B2B SaaS Engineering & System Architecture",
+      "UI/UX Design Engineering & Figma Design Tokens"
     ],
     "worksFor": EXPERIENCES.filter(e => e.isCurrent).map(e => ({
       "@type": "Organization",
@@ -52,8 +77,8 @@ export function generateWebSiteJsonLd() {
     "@type": "WebSite",
     "@id": "https://hiredavid.vercel.app/#website",
     "url": "https://hiredavid.vercel.app",
-    "name": "David Sawe — Senior Design Engineer & Technology Director",
-    "description": PERSONAL_INFO.tagline,
+    "name": "David Sawe | Senior Full Stack Developer & Design Engineer in Lagos, Nigeria",
+    "description": "Portfolio of David Sawe — Premier Senior Full Stack Developer & Design Engineer based in Lagos, Nigeria. Building enterprise B2B SaaS, resilient payment gateways, and AI-enabled software.",
     "publisher": {
       "@id": "https://hiredavid.vercel.app/#person"
     },
@@ -71,7 +96,7 @@ export function generateProfilePageJsonLd() {
     "hasPart": [
       {
         "@type": "ItemList",
-        "name": "Featured Projects & AI Applications",
+        "name": "Featured Software Engineering & Design Portfolio",
         "itemListElement": PROJECTS.map((proj, idx) => ({
           "@type": "ListItem",
           "position": idx + 1,

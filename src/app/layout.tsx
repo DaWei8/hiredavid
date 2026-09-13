@@ -18,23 +18,26 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://hiredavid.vercel.app"),
   title: {
-    default: "David Sawe — Senior Design Engineer & Technology Director",
-    template: "%s | David Sawe"
+    default: "David Sawe — Senior Full Stack Developer & Design Engineer in Lagos, Nigeria",
+    template: "%s | David Sawe (Lagos, Nigeria)"
   },
-  description: "Senior Design Engineer & Technology Director specializing in full-stack engineering (Next.js, TypeScript, Supabase), AI & LLM solutions, resilient payment rails (Paystack, Stripe, Monnify), and product design architecture.",
+  description: "David Sawe is a Senior Full Stack Developer & Design Engineer in Lagos, Nigeria. Specializing in Next.js, TypeScript, AI integrations, enterprise B2B SaaS, and resilient payment gateways (Paystack, Flutterwave, Stripe). Available for Senior, Lead, and CTO roles.",
   keywords: [
+    "Full Stack Developer in Nigeria",
+    "Full Stack Developer in Lagos",
+    "Fullstack Developer Lagos",
+    "Fullstack Developer Nigeria",
+    "Senior Software Engineer Lagos",
+    "Software Engineer in Lagos Nigeria",
+    "Design Engineer Lagos",
+    "Hire Full Stack Developer Nigeria",
     "David Sawe",
     "David Sawe Lagos",
-    "Senior Design Engineer",
-    "Technology Director Lagos",
-    "Full Stack Developer Nigeria",
-    "CTO Uselango",
     "Next.js Developer Lagos",
-    "TypeScript Architect",
-    "Supabase RLS Expert",
-    "AI LLM Engineer",
-    "Paystack Flutterwave Stripe Integration",
-    "FUTA Computer Science First Class"
+    "TypeScript Architect Nigeria",
+    "AI LLM Engineer Lagos",
+    "CTO Uselango",
+    "Paystack Flutterwave Stripe Developer Lagos"
   ],
   authors: [{ name: "David Sawe", url: "https://github.com/DaWei8" }],
   creator: "David Sawe",
@@ -48,9 +51,9 @@ export const metadata: Metadata = {
     type: "profile",
     locale: "en_US",
     url: "https://hiredavid.vercel.app",
-    title: "David Sawe — Senior Design Engineer & Technology Director",
-    description: "Senior Design Engineer & Technology Director. Building enterprise B2B SaaS, resilient payment gateways, and AI-enabled products.",
-    siteName: "Hire David Sawe",
+    title: "David Sawe — Senior Full Stack Developer & Design Engineer in Lagos, Nigeria",
+    description: "Premier Senior Full Stack Developer & Design Engineer based in Lagos, Nigeria. Architecting Next.js, Supabase, Payment Systems & LLM products.",
+    siteName: "Hire David Sawe — Lagos, Nigeria",
     firstName: "David",
     lastName: "Sawe",
     username: "DaWei8",
@@ -58,8 +61,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "David Sawe — Senior Design Engineer & Technology Director",
-    description: "Full Stack Engineer + AI Solutions. Architecting high-scale Next.js, Supabase, Payment Systems & LLM products.",
+    title: "David Sawe — Senior Full Stack Developer in Lagos, Nigeria",
+    description: "Senior Full Stack Developer & Design Engineer in Lagos, Nigeria. Architecting high-scale Next.js, Supabase, Payment Systems & AI products.",
     creator: "@DaWei8",
   },
   alternates: {

@@ -1,9 +1,10 @@
 "use client";
 
+/* eslint-disable @next/next/no-img-element */
+
 import { useState, useEffect } from "react";
 import { PERSONAL_INFO } from "@/lib/data";
-import { GithubIcon, LinkedinIcon } from "./Icons";
-import { FileText, Menu, X, ArrowUpRight } from "lucide-react";
+import { Menu, X, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 interface HeaderProps {
@@ -36,7 +37,10 @@ export default function Header({ onOpenResume }: HeaderProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 text-xl font-extrabold text-stone-900 tracking-tight group">
+          <Link
+            href="/"
+            className="flex items-center gap-2.5 text-xl font-extrabold text-stone-900 tracking-tight group"
+          >
             <img
               src="/image.png"
               alt="Hire David Logo"

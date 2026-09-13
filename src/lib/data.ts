@@ -71,6 +71,48 @@ export const SKILL_CATEGORIES = {
 
 export const PROJECTS: Project[] = [
   {
+    id: "uselango",
+    title: "Uselango Retail Access Platform",
+    category: "Full Stack & B2B",
+    description: "Enterprise B2B platform connecting FMCG manufacturers with retail distribution networks across Nigeria.",
+    detailedOverview: "Architected end-to-end B2B infrastructure with multi-tier user access, Supabase Row Level Security (RLS), dynamic invoice generation, and edge hosting on Cloudflare & Vercel.",
+    tags: ["Next.js", "TypeScript", "Supabase RLS", "Flutterwave", "Paystack", "Cloudflare"],
+    liveUrl: "https://uselango.com",
+    githubUrl: "https://github.com/DaWei8",
+    featured: true,
+    role: "Founding Engineer & CTO",
+    impact: "Automated FMCG invoice settlements & escrow for 100+ distribution routes.",
+    image: "/projects/uselango.png"
+  },
+  {
+    id: "testbloq",
+    title: "Testbloq AI Proctoring & Grading",
+    category: "UI/UX & Design",
+    description: "AI-powered candidate assessment, remote proctoring, and automated evaluation platform.",
+    detailedOverview: "Designed end-to-end Figma UI/UX architecture, layout tokens, accessibility guidelines, and interactive walkthrough scripts that reduced candidate drop-off by 25%.",
+    tags: ["Figma", "Design Systems", "UX Research", "React", "AI Proctoring"],
+    liveUrl: "https://testbloq.com",
+    githubUrl: "https://github.com/DaWei8",
+    featured: true,
+    role: "Lead Product Designer",
+    impact: "Reduced onboarding friction & drop-offs by 25%.",
+    image: "/projects/testbloq.png"
+  },
+  {
+    id: "taxculate",
+    title: "Taxculate U.S. Tax Compliance Platform",
+    category: "Full Stack & B2B",
+    description: "U.S. tax calculation engine and SaaS platform with zero calculation drift across filing tiers.",
+    detailedOverview: "Built deterministic math calculation engines validated by Jest unit tests. Integrated Stripe subscriptions, tier-based billing, dynamic tax summary dashboards, and audited API boundaries.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Stripe Billing"],
+    liveUrl: "https://taxculate.com",
+    githubUrl: "https://github.com/DaWei8/taxculate",
+    featured: true,
+    role: "Full Stack Developer",
+    impact: "Handled multi-state US tax filings with 100% calculation accuracy.",
+    image: "/projects/taxculate.png"
+  },
+  {
     id: "stem",
     title: "STEM Software Testing & Engineering Manager",
     category: "Full Stack & B2B",
@@ -99,20 +141,6 @@ export const PROJECTS: Project[] = [
     image: "/projects/phasely.png"
   },
   {
-    id: "uselango",
-    title: "Uselango Retail Access Platform",
-    category: "Full Stack & B2B",
-    description: "Enterprise B2B platform connecting FMCG manufacturers with retail distribution networks across Nigeria.",
-    detailedOverview: "Architected end-to-end B2B infrastructure with multi-tier user access, Supabase Row Level Security (RLS), dynamic invoice generation, and edge hosting on Cloudflare & Vercel.",
-    tags: ["Next.js", "TypeScript", "Supabase RLS", "Flutterwave", "Paystack", "Cloudflare"],
-    liveUrl: "https://uselango.com",
-    githubUrl: "https://github.com/DaWei8",
-    featured: true,
-    role: "Founding Engineer & CTO",
-    impact: "Automated FMCG invoice settlements & escrow for 100+ distribution routes.",
-    image: "/projects/uselango.png"
-  },
-  {
     id: "fidesagro",
     title: "Fidesagro Digital Agro Platform",
     category: "FinTech & Payments",
@@ -125,34 +153,6 @@ export const PROJECTS: Project[] = [
     role: "Founding Engineer",
     impact: "Zero reconciliation errors on multi-million Naira produce transactions.",
     image: "/projects/fidesagro.png"
-  },
-  {
-    id: "taxculate",
-    title: "Taxculate U.S. Tax Compliance Platform",
-    category: "Full Stack & B2B",
-    description: "U.S. tax calculation engine and SaaS platform with zero calculation drift across filing tiers.",
-    detailedOverview: "Built deterministic math calculation engines validated by Jest unit tests. Integrated Stripe subscriptions, tier-based billing, dynamic tax summary dashboards, and audited API boundaries.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Stripe Billing"],
-    liveUrl: "https://taxculate.com",
-    githubUrl: "https://github.com/DaWei8/taxculate",
-    featured: true,
-    role: "Full Stack Developer",
-    impact: "Handled multi-state US tax filings with 100% calculation accuracy.",
-    image: "/projects/taxculate.png"
-  },
-  {
-    id: "testbloq",
-    title: "Testbloq AI Proctoring & Grading",
-    category: "UI/UX & Design",
-    description: "AI-powered candidate assessment, remote proctoring, and automated evaluation platform.",
-    detailedOverview: "Designed end-to-end Figma UI/UX architecture, layout tokens, accessibility guidelines, and interactive walkthrough scripts that reduced candidate drop-off by 25%.",
-    tags: ["Figma", "Design Systems", "UX Research", "React", "AI Proctoring"],
-    liveUrl: "https://testbloq.com",
-    githubUrl: "https://github.com/DaWei8",
-    featured: false,
-    role: "Lead Product Designer",
-    impact: "Reduced onboarding friction & drop-offs by 25%.",
-    image: "/projects/testbloq.png"
   },
   {
     id: "bitchant",

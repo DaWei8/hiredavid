@@ -1,5 +1,7 @@
 'use client';
 
+/* eslint-disable @next/next/no-img-element */
+
 import { Project } from '@/lib/data';
 import { GithubIcon } from './Icons';
 import { X, ExternalLink, CheckCircle } from 'lucide-react';
@@ -44,7 +46,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         {/* Content Body */}
         <div className="p-6 sm:p-8 overflow-y-auto space-y-6">
           {project.image && (
-            <div className="w-full aspect-[16/9] rounded-xl overflow-hidden border border-[#e0d6c5] bg-[#f4efe6] shadow-xs mb-2">
+            <div className="w-full aspect-video rounded-xl overflow-hidden border border-[#e0d6c5] bg-[#f4efe6] shadow-xs mb-2">
               <img
                 src={project.image}
                 alt={project.title}

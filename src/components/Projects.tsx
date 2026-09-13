@@ -8,6 +8,7 @@ import { ExternalLink, ArrowUpRight } from "lucide-react";
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
+  const [showAll, setShowAll] = useState<boolean>(false);
   const [activeProjectModal, setActiveProjectModal] = useState<Project | null>(
     null,
   );
@@ -25,15 +26,15 @@ export default function Projects() {
       ? PROJECTS
       : PROJECTS.filter((p) => p.category === selectedCategory);
 
+  const visibleProjects = showAll
+    ? filteredProjects
+    : filteredProjects.slice(0, 3);
+
   return (
     <section
       id="projects"
       className="py-24 bg-[#f4efe6] relative border-t border-[#e0d6c5] overflow-hidden"
     >
-      {/* Background Glow Blobs */}
-      <div className="absolute top-1/2 -left-20 w-96 h-96 bg-[#e6dbc8]/50 rounded-full blur-3xl pointer-events-none animate-blob" />
-      <div className="absolute bottom-10 right-0 w-96 h-96 bg-[#dcd0bb]/60 rounded-full blur-3xl pointer-events-none animate-blob-delay" />
-
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col justify-between gap-6 mb-12">
@@ -66,7 +67,7 @@ export default function Projects() {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredProjects.map((project) => (
+          {visibleProjects.map((project) => (
             <div
               key={project.id}
               className="p-4 sm:p-3 rounded-2xl bg-[#ffffff] border border-[#e7e1d4] hover:border-[#c8bfb0] hover:shadow-lg transition-all duration-300 flex flex-col justify-between group shadow-xs"
@@ -76,7 +77,7 @@ export default function Projects() {
                 {project.image ? (
                   <div
                     onClick={() => setActiveProjectModal(project)}
-                    className="relative w-full aspect-[16/10] rounded-xl overflow-hidden mb-4 border border-[#e7e1d4] bg-[#f4efe6] group-hover:shadow-md transition-all cursor-pointer"
+                    className="relative w-full aspect-16/10 rounded-xl overflow-hidden mb-4 border border-[#e7e1d4] bg-[#f4efe6] group-hover:shadow-md transition-all cursor-pointer"
                   >
                     <img
                       src={project.image}
@@ -92,7 +93,7 @@ export default function Projects() {
                 ) : (
                   <div
                     onClick={() => setActiveProjectModal(project)}
-                    className="relative w-full aspect-[16/10] rounded-xl overflow-hidden mb-4 border border-[#e7e1d4] bg-[#f4efe6] flex flex-col items-center justify-center p-4 cursor-pointer group-hover:bg-[#ebe4d6] transition-colors"
+                    className="relative w-full aspect-16/10 rounded-xl overflow-hidden mb-4 border border-[#e7e1d4] bg-[#f4efe6] flex flex-col items-center justify-center p-4 cursor-pointer group-hover:bg-[#ebe4d6] transition-colors"
                   >
                     <span className="text-xs font-bold text-stone-900 uppercase tracking-wider text-center">
                       {project.title}
@@ -188,6 +189,22 @@ export default function Projects() {
             </div>
           ))}
         </div>
+
+        {/* Show More / Hide Toggle Button */}
+        {filteredProjects.length > 3 && (
+          <div className="flex justify-center mt-12">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="px-6 py-3 rounded-md bg-[#faf7f2] border border-[#e0d6c5] hover:border-stone-400 text-stone-800 font-bold text-xs uppercase tracking-wider transition-all shadow-xs flex items-center gap-2 cursor-pointer"
+            >
+              {showAll ? (
+                <>HIDE ADDITIONAL WORK —</>
+              ) : (
+                <>SHOW MORE PROJECTS ({filteredProjects.length - 3}) +</>
+              )}
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Detail Modal */}

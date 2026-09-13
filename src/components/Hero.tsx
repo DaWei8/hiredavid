@@ -12,9 +12,6 @@ export default function Hero({ onOpenResume }: HeroProps) {
     <section className="relative pt-32 pb-20 md:pt-44 md:pb-28 bg-[#faf7f2] overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-grid-pattern opacity-60 pointer-events-none" />
-      <div className="absolute top-10 right-10 w-96 h-96 bg-[#e8decb]/50 rounded-full blur-3xl pointer-events-none animate-blob" />
-      <div className="absolute bottom-10 -left-20 w-80 h-80 bg-[#dfd3bc]/60 rounded-full blur-3xl pointer-events-none animate-blob-delay" />
-
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-6 max-w-3xl">
           {/* Name Badge */}
@@ -37,17 +34,23 @@ export default function Hero({ onOpenResume }: HeroProps) {
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <a
               href="#contact"
-              className="px-6 py-3 rounded-xl text-sm font-bold text-[#faf7f2] bg-stone-900 hover:bg-stone-800 shadow-xs transition-all flex items-center gap-2 group"
+              className="px-6 py-4 rounded-lg text-sm font-bold text-[#faf7f2] bg-stone-900 hover:bg-stone-800 shadow-xs transition-all flex items-center gap-2 group"
             >
               CONTACT ME
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
               href="#projects"
-              className="px-6 py-3 rounded-xl text-sm font-semibold text-stone-800 bg-[#ffffff] border border-[#e7e1d4] hover:border-[#c8bfb0] shadow-xs transition-all"
+              className="px-6 py-4 rounded-lg text-sm font-semibold text-stone-800 bg-[#ffffff] border border-[#e7e1d4] hover:border-[#c8bfb0] shadow-xs transition-all"
             >
               VIEW FEATURED WORK ↗
             </a>
+            <button
+              onClick={onOpenResume}
+              className="px-6 py-4 rounded-lg text-sm font-semibold text-stone-700 bg-[#efe8dc] border border-[#e0d6c5] hover:border-stone-400 hover:text-stone-900 shadow-xs transition-all"
+            >
+              VIEW RESUME (PDF)
+            </button>
           </div>
         </div>
       </div>
