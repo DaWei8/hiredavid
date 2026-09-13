@@ -1,10 +1,9 @@
-'use client';
+"use client";
 
-/* eslint-disable @next/next/no-img-element */
-
-import { Project } from '@/lib/data';
-import { GithubIcon } from './Icons';
-import { X, ExternalLink, CheckCircle } from 'lucide-react';
+import { Project } from "@/lib/data";
+import { GithubIcon } from "./Icons";
+import { X, ExternalLink, CheckCircle } from "lucide-react";
+import Image from "next/image";
 
 interface ProjectModalProps {
   project: Project | null;
@@ -47,7 +46,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         <div className="p-6 sm:p-8 overflow-y-auto space-y-6">
           {project.image && (
             <div className="w-full aspect-video rounded-xl overflow-hidden border border-[#e0d6c5] bg-[#f4efe6] shadow-xs mb-2">
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
                 className="w-full h-full object-cover object-top"
@@ -84,7 +83,9 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             <div className="flex items-start gap-3 p-4 rounded-xl bg-[#f4efe6] border border-[#e0d6c5] text-stone-900 text-sm">
               <CheckCircle className="w-4 h-4 shrink-0 text-stone-800 mt-0.5" />
               <div>
-                <strong className="block uppercase text-stone-900 text-xs font-bold">Key Commercial Impact:</strong>
+                <strong className="block uppercase text-stone-900 text-xs font-bold">
+                  Key Commercial Impact:
+                </strong>
                 {project.impact}
               </div>
             </div>

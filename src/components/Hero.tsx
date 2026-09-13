@@ -3,11 +3,7 @@
 import { PERSONAL_INFO } from "@/lib/data";
 import { ArrowRight } from "lucide-react";
 
-interface HeroProps {
-  onOpenResume: () => void;
-}
-
-export default function Hero({ onOpenResume }: HeroProps) {
+export default function Hero() {
   return (
     <section className="relative pt-32 pb-20 md:pt-44 md:pb-28 bg-[#faf7f2] overflow-hidden">
       {/* Background Effects */}

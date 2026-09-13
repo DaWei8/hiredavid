@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 export default function TechStack() {
   const skills = [
     { name: "TypeScript", icon: "typescript", color: "3178C6" },
@@ -36,7 +38,7 @@ export default function TechStack() {
               key={idx}
               className="flex items-center gap-2 text-stone-700 text-md font-medium shrink-0"
             >
-              <img
+              <Image
                 src={`https://cdn.jsdelivr.net/npm/simple-icons@11/icons/${item.icon}.svg`}
                 alt={item.name}
                 width={26}

@@ -5,6 +5,7 @@ import { PROJECTS, Project } from "@/lib/data";
 import ProjectModal from "./ProjectModal";
 import { GithubIcon } from "./Icons";
 import { ExternalLink, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
@@ -79,7 +80,7 @@ export default function Projects() {
                     onClick={() => setActiveProjectModal(project)}
                     className="relative w-full aspect-16/10 rounded-xl overflow-hidden mb-4 border border-[#e7e1d4] bg-[#f4efe6] group-hover:shadow-md transition-all cursor-pointer"
                   >
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover object-top sepia-[0.60] contrast-[0.96] brightness-[0.50] group-hover:sepia-0 group-hover:contrast-100 group-hover:brightness-100 transition-all duration-500"

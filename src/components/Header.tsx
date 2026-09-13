@@ -1,11 +1,10 @@
 "use client";
 
-/* eslint-disable @next/next/no-img-element */
-
 import { useState, useEffect } from "react";
 import { PERSONAL_INFO } from "@/lib/data";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface HeaderProps {
   onOpenResume: () => void;
@@ -41,7 +40,7 @@ export default function Header({ onOpenResume }: HeaderProps) {
             href="/"
             className="flex items-center gap-2.5 text-xl font-extrabold text-stone-900 tracking-tight group"
           >
-            <img
+            <Image
               src="/image.png"
               alt="Hire David Logo"
               className="w-8 h-8 rounded-sm object-cover border border-[#e0d6c5] shadow-xs group-hover:border-stone-400 transition-colors shrink-0"

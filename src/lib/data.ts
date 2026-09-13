@@ -52,23 +52,6 @@ export const PERSONAL_INFO = {
   availability: "Available for Senior/Lead Full-Stack, Design Engineering & CTO Roles",
 };
 
-export const FUN_FACTS = [
-  "Top 1% nationally in OSINT research — if it's anywhere on the open web, I can track it down.",
-  "Engineered a 1-of-1 proprietary method for fetching real-time online sentiment without paid X/Twitter APIs.",
-  "Deep understanding of financial markets, on-chain DeFi analytics, and tokenomics model design."
-];
-
-export const SKILL_CATEGORIES = {
-  languages: ["TypeScript", "JavaScript", "Python", "HTML5/CSS3", "Java", "Dart"],
-  frameworks: ["Next.js (App Router)", "React", "Node.js", "Express.js", "Tailwind CSS", "Bootstrap"],
-  aiAndLlm: ["Anthropic API (Claude)", "OpenAI API (GPT-4)", "Gemini API", "LangChain", "Zod Schema Validation", "Context Engineering"],
-  fintechAndPayments: ["Paystack", "Flutterwave", "Monnify Virtual Accounts", "Stripe Billing & Webhooks", "Split Payouts"],
-  databasesAndCloud: ["PostgreSQL", "Supabase (RLS)", "MongoDB", "Firebase Auth", "Cloudflare (DNS/R2)", "Vercel", "REST APIs", "GraphQL"],
-  testingAndSecurity: ["Jest", "Vitest", "Row Level Security (RLS)", "RBAC", "BurpSuite Security Auditing", "HMAC Webhook Verification"],
-  designAndPrototyping: ["Figma", "Framer", "Design Systems", "Design Tokens", "Rapid Prototyping", "UX Research", "Heuristic Audits"],
-  devopsAndTools: ["Git", "GitHub Actions", "CI/CD Pipelines", "Docker", "Playwright", "AWS", "Azure"]
-};
-
 export const PROJECTS: Project[] = [
   {
     id: "uselango",

@@ -1,9 +1,8 @@
 "use client";
 
-/* eslint-disable @next/next/no-img-element */
-
 import { PERSONAL_INFO, CERTIFICATIONS } from "@/lib/data";
 import { GraduationCap, Award, CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 
 export default function EducationCertifications() {
   return (
@@ -15,7 +14,7 @@ export default function EducationCertifications() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left: About */}
           <div className="space-y-6">
-            <img
+            <Image
               src="/image.png"
               alt="Hire David Logo"
               className="w-56 h-56 rounded-lg object-cover  group-hover:border-stone-400 transition-colors shrink-0"

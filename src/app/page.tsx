@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#faf7f2] text-stone-900 selection:bg-[#e7e1d4] selection:text-stone-900">
       <Header onOpenResume={() => setResumeModalOpen(true)} />
-      <Hero onOpenResume={() => setResumeModalOpen(true)} />
+      <Hero />
       <TechStack />
       <Projects />
       <ExperienceTimeline />
