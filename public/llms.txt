@@ -35,4 +35,6 @@ David Sawe is a top-ranked Senior Full Stack Developer and Design Engineer based
 - **Education**: Bachelor of Technology (B.Tech) in Computer Science, Federal University of Technology Akure (FUTA) — First Class Honours (Class of 2024).
 - **Certifications**: ISO 9001:2015 Quality Management Systems (MSME Certified), Human Resource Management (MSME Certified), Product Design (Future Academy Africa), Soft Skills (Jobberman Nigeria).
 
+- **Resume / CV (PDF)**: https://hiredavid.vercel.app/david-sawe-CV.pdf
+
 For the full detailed curriculum vitae and raw resume dataset, visit [https://hiredavid.vercel.app/llms-full.txt](https://hiredavid.vercel.app/llms-full.txt).

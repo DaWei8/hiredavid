@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { PERSONAL_INFO, EXPERIENCES, CERTIFICATIONS } from "@/lib/data";
-import { X, Printer, Copy, Check, Mail, MapPin } from "lucide-react";
+import { X, Printer, Copy, Check, Mail, MapPin, Download } from "lucide-react";
 
 interface ResumeModalProps {
   isOpen: boolean;
@@ -52,13 +52,23 @@ ${EXPERIENCES.map((e) => `${e.role} | ${e.company} (${e.period})\n${e.highlights
         <div className="flex items-center justify-between p-4 sm:p-6 border-b border-[#e0d6c5] bg-[#f4efe6] print:hidden">
           <div className="flex items-center gap-2">
             <span className="text-sm font-bold text-stone-900">
-              David_Sawe_Resume.pdf
+              david-sawe-CV.pdf
             </span>
             <span className="px-2 py-0.5 rounded bg-[#efe8dc] text-stone-800 text-[10px] font-bold border border-[#e0d6c5]">
               VERIFIED CV
             </span>
           </div>
           <div className="flex items-center gap-2">
+            <a
+              href="/david-sawe-CV.pdf"
+              download="david-sawe-CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-1.5 rounded-lg bg-stone-900 text-stone-50 text-xs font-bold hover:bg-stone-800 flex items-center gap-1.5 transition-colors"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>Download PDF</span>
+            </a>
             <button
               onClick={handleCopyCV}
               className="px-3 py-1.5 rounded-lg bg-[#faf7f2] text-stone-700 hover:bg-[#efe8dc] text-xs flex items-center gap-1.5 border border-[#e0d6c5] transition-colors"
@@ -72,10 +82,10 @@ ${EXPERIENCES.map((e) => `${e.role} | ${e.company} (${e.period})\n${e.highlights
             </button>
             <button
               onClick={handlePrint}
-              className="px-4 py-1.5 rounded-lg bg-stone-900 text-stone-50 text-xs font-bold hover:bg-stone-800 flex items-center gap-1.5 transition-colors"
+              className="px-3 py-1.5 rounded-lg bg-[#faf7f2] text-stone-700 hover:bg-[#efe8dc] text-xs flex items-center gap-1.5 border border-[#e0d6c5] transition-colors"
             >
               <Printer className="w-3.5 h-3.5" />
-              <span>Print / Save PDF</span>
+              <span>Print</span>
             </button>
             <button
               onClick={onClose}
