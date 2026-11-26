@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     default: "David Sawe — Senior Full Stack Developer & Design Engineer in Lagos, Nigeria",
     template: "%s | David Sawe (Lagos, Nigeria)"
   },
-  description: "David Sawe is a Senior Full Stack Developer & Design Engineer in Lagos, Nigeria. Specializing in Next.js, TypeScript, AI integrations, enterprise B2B SaaS, and resilient payment gateways (Paystack, Flutterwave, Stripe). Available for Senior, Lead, and CTO roles.",
+  description: "David Sawe is a Senior Full Stack Developer, Design Engineer & AI Consultant in Lagos, Nigeria. Helping local businesses and MSMEs scale operations with AI consultations, AI automations, custom software, and dashboards, plus enterprise B2B SaaS and payment gateways.",
   keywords: [
     "Full Stack Developer in Nigeria",
     "Full Stack Developer in Lagos",
@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     "Next.js Developer Lagos",
     "TypeScript Architect Nigeria",
     "AI LLM Engineer Lagos",
+    "AI Consultant Lagos Nigeria",
+    "AI Automation for MSMEs Nigeria",
+    "Custom Software & Dashboards Lagos",
     "CTO Uselango",
     "Paystack Flutterwave Stripe Developer Lagos"
   ],

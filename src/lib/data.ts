@@ -31,13 +31,56 @@ export interface Certification {
   detail?: string;
 }
 
+export interface ConsultingService {
+  id: string;
+  title: string;
+  description: string;
+  deliverables: string[];
+}
+
+export const AI_CONSULTING_SERVICES: ConsultingService[] = [
+  {
+    id: "ai-automations",
+    title: "AI Automations",
+    description:
+      "Streamline repetitive daily workflows with intelligent agents and automated pipelines that save hours of manual effort every week.",
+    deliverables: [
+      "WhatsApp, Telegram & email customer support bots",
+      "Automated lead capture, follow-ups & CRM syncing",
+      "Invoice processing, reporting & data entry automation",
+    ],
+  },
+  {
+    id: "custom-software",
+    title: "Custom Software",
+    description:
+      "Purpose-built web applications and internal tools designed around your exact business processes rather than rigid off-the-shelf software.",
+    deliverables: [
+      "Order management, booking & client portals",
+      "Inventory, billing & local payment rail integrations",
+      "AI-assisted internal tools tailored for MSME teams",
+    ],
+  },
+  {
+    id: "dashboards",
+    title: "Business Dashboards",
+    description:
+      "Replace scattered spreadsheets with real-time operational dashboards that give you instant visibility into revenue, stock, and team performance.",
+    deliverables: [
+      "Live sales, cashflow & KPI tracking views",
+      "Automated daily/weekly executive summaries",
+      "Role-based access for owners, managers & staff",
+    ],
+  },
+];
+
 export const PERSONAL_INFO = {
   name: "David Sawe",
   handle: "@DaWei8",
   headline: "Senior Design Engineer & Technology Director",
-  subheading: "Full Stack Developer + AI Solutions Engineer",
-  tagline: "I specialize in architecting end-to-end web applications, resilient payment systems, and intelligent AI integrations for sustainable business growth.",
-  summary: "Senior Design Engineer and Technology Director with deep experience across full-stack engineering, interface architecture, and product strategy. Proven track record architecting and deploying end-to-end B2B platforms, SaaS products, and distributed web applications with Next.js, TypeScript, and Supabase. Adept at translating complex commercial requirements into resilient technical blueprints, data schemas, and clean, modular systems strictly under 150 lines per module.",
+  subheading: "Full Stack Developer + AI Consultant & Solutions Engineer",
+  tagline: "I help startups, local businesses, and MSMEs eliminate manual bottlenecks and scale faster. From AI consultations and workflow automations to custom software and live dashboards, I design and engineer systems built for real growth.",
+  summary: "Senior Design Engineer, Technology Director, and AI Consultant helping local businesses and MSMEs scale their operations through AI automations, custom software, and operational dashboards. Proven track record architecting and deploying end-to-end B2B platforms, SaaS products, and distributed web applications with Next.js, TypeScript, and Supabase.",
   email: "Sawedavid7@gmail.com",
   secondaryEmail: "davidsawee@outlook.com",
   phone: "+234 705 340 0122",
@@ -49,7 +92,7 @@ export const PERSONAL_INFO = {
   institution: "Federal University of Technology, Akure (FUTA)",
   honours: "First Class Honours (Class of 2024)",
   nysc: "National Youth Service Corps (NYSC) - Completed",
-  availability: "Available for Senior/Lead Full-Stack, Design Engineering & CTO Roles",
+  availability: "Available for AI Consultations (Local Businesses & MSMEs), Full-Stack & CTO Roles",
 };
 
 export const PROJECTS: Project[] = [

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import TechStack from '@/components/TechStack';
+import AIConsulting from '@/components/AIConsulting';
 import Projects from '@/components/Projects';
 import ExperienceTimeline from '@/components/ExperienceTimeline';
 import EducationCertifications from '@/components/EducationCertifications';
@@ -19,6 +20,7 @@ export default function Home() {
       <Header onOpenResume={() => setResumeModalOpen(true)} />
       <Hero />
       <TechStack />
+      <AIConsulting />
       <Projects />
       <ExperienceTimeline />
       <EducationCertifications />

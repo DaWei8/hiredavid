@@ -17,7 +17,7 @@ export function generatePersonJsonLd() {
       "CTO Uselango"
     ],
     "jobTitle": "Senior Full Stack Developer & Design Engineer",
-    "description": "David Sawe is a top Senior Full Stack Developer and Design Engineer based in Lagos, Nigeria. Specializing in Next.js, TypeScript, AI integrations, B2B SaaS architecture, and resilient payment systems.",
+    "description": "David Sawe is a top Senior Full Stack Developer, Design Engineer, and AI Consultant based in Lagos, Nigeria. He helps local businesses and MSMEs scale operations with AI consultations, AI automations, custom software, and business dashboards.",
     "url": "https://hiredavid.vercel.app",
     "email": `mailto:${PERSONAL_INFO.email}`,
     "telephone": PERSONAL_INFO.phone,
@@ -58,6 +58,8 @@ export function generatePersonJsonLd() {
       "Next.js App Router & React Architecture",
       "TypeScript & Node.js Backend Development",
       "AI & LLM Integration (Anthropic Claude, OpenAI GPT-4, Gemini)",
+      "AI Consultations & Business Operations Scaling for Local Businesses and MSMEs",
+      "AI Automations, Custom Software & Operational Dashboards",
       "Supabase & Row Level Security (RLS)",
       "FinTech & Payment Rails (Paystack, Flutterwave, Monnify, Stripe)",
       "B2B SaaS Engineering & System Architecture",

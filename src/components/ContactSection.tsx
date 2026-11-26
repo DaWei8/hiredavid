@@ -72,7 +72,7 @@ export default function ContactSection() {
             Get In Touch
           </h2>
           <p className="text-stone-400 text-base mt-2">
-            Available for Full-Stack Engineering & Product Design roles.
+            Available for AI Consultations (Local Businesses &amp; MSMEs), Full-Stack Engineering &amp; Product Design roles.
           </p>
         </div>
 
@@ -195,7 +195,7 @@ export default function ContactSection() {
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
                   }
-                  placeholder="Tell me about your project, timeline, or engineering role..."
+                  placeholder="Tell me about your business, AI consultation needs, project, or engineering role..."
                   className="w-full px-4 py-3 rounded-md bg-[#1c1917] border border-stone-700 text-stone-100 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-stone-400/20 focus:border-stone-300 text-sm resize-none"
                 />
               </div>

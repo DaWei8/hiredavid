@@ -43,6 +43,7 @@ export default function TechStack() {
                 alt={item.name}
                 width={26}
                 height={26}
+                unoptimized
                 className="shrink-0 object-contain"
                 loading="lazy"
                 onError={(e) => {

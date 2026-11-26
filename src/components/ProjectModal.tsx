@@ -45,11 +45,13 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         {/* Content Body */}
         <div className="p-6 sm:p-8 overflow-y-auto space-y-6">
           {project.image && (
-            <div className="w-full aspect-video rounded-xl overflow-hidden border border-[#e0d6c5] bg-[#f4efe6] shadow-xs mb-2">
+            <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-[#e0d6c5] bg-[#f4efe6] shadow-xs mb-2">
               <Image
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover object-top"
+                fill
+                sizes="(max-width: 768px) 100vw, 768px"
+                className="object-cover object-top"
               />
             </div>
           )}

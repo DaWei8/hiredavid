@@ -21,6 +21,7 @@ export default function Header({ onOpenResume }: HeaderProps) {
   }, []);
 
   const navLinks = [
+    { name: "AI Consulting", href: "#consulting" },
     { name: "Work", href: "#projects" },
     { name: "About", href: "#about" },
   ];
@@ -43,6 +44,8 @@ export default function Header({ onOpenResume }: HeaderProps) {
             <Image
               src="/image.png"
               alt="Hire David Logo"
+              width={32}
+              height={32}
               className="w-8 h-8 rounded-sm object-cover border border-[#e0d6c5] shadow-xs group-hover:border-stone-400 transition-colors shrink-0"
             />
             <span>Hire David</span>

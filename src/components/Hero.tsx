@@ -17,7 +17,7 @@ export default function Hero() {
           </div>
           {/* Title */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-stone-900 tracking-tight leading-[1.08]">
-            Design & Full Stack Engineer{" "}
+            Product Engineer{" "}
             <span className="text-stone-500">+ AI Solutions</span>
           </h1>
 

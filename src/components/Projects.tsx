@@ -83,7 +83,9 @@ export default function Projects() {
                     <Image
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover object-top sepia-[0.60] contrast-[0.96] brightness-[0.50] group-hover:sepia-0 group-hover:contrast-100 group-hover:brightness-100 transition-all duration-500"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover object-top sepia-[0.60] contrast-[0.96] brightness-[0.50] group-hover:sepia-0 group-hover:contrast-100 group-hover:brightness-100 transition-all duration-500"
                     />
                     {/* Warm Brown Uniformity Overlay */}
                     <div className="absolute inset-0 bg-[#885830]/12 mix-blend-multiply group-hover:opacity-0 transition-opacity duration-500 pointer-events-none" />

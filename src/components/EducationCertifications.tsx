@@ -17,6 +17,8 @@ export default function EducationCertifications() {
             <Image
               src="/image.png"
               alt="Hire David Logo"
+              width={224}
+              height={224}
               className="w-56 h-56 rounded-lg object-cover  group-hover:border-stone-400 transition-colors shrink-0"
             />
             <div>
@@ -40,6 +42,12 @@ export default function EducationCertifications() {
                 As a naturally curious builder, I am constantly exploring
                 cutting-edge AI technologies, context engineering pipelines, and
                 financial payment rails to create real commercial value.
+              </p>
+              <p className="text-sm text-stone-600 leading-relaxed">
+                I also offer hands-on AI consultations to help local businesses
+                and MSMEs scale their operations — delivering practical AI
+                automations, custom software, and real-time operational
+                dashboards built for sustainable growth.
               </p>
             </div>
           </div>

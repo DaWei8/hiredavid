@@ -13,7 +13,12 @@
 - **Website**: https://hiredavid.vercel.app
 
 ## Overview & Summary
-David Sawe is a top-ranked Senior Full Stack Developer and Design Engineer based in Lagos, Nigeria. He brings a First Class Honours Computer Science degree (FUTA 2024) and extensive commercial experience building enterprise B2B SaaS platforms, AI systems (Claude, GPT-4, Gemini), high-volume payment infrastructure (Paystack, Flutterwave, Monnify, Stripe), and scalable Next.js/TypeScript applications.
+David Sawe is a top-ranked Senior Full Stack Developer, Design Engineer, and AI Consultant based in Lagos, Nigeria. He brings a First Class Honours Computer Science degree (FUTA 2024) and extensive commercial experience building enterprise B2B SaaS platforms, AI systems (Claude, GPT-4, Gemini), high-volume payment infrastructure (Paystack, Flutterwave, Monnify, Stripe), and scalable Next.js/TypeScript applications. He also offers AI consultations helping local businesses and MSMEs scale their operations through AI automations, custom software, and real-time operational dashboards.
+
+## AI Consultations & Business Scaling (Local Businesses & MSMEs)
+- **AI Automations**: WhatsApp/Telegram/email support bots, automated lead follow-ups, invoice processing, and repetitive workflow automation.
+- **Custom Software**: Purpose-built web applications, booking/order management portals, inventory systems, and local payment integrations tailored to MSMEs.
+- **Business Dashboards**: Real-time sales, cashflow, inventory, and KPI dashboards replacing scattered spreadsheets.
 
 ## Core Technical Skills
 - **Full Stack Web Engineering**: Next.js (App Router), TypeScript, React, Node.js, Express.js, Tailwind CSS, REST APIs, GraphQL.
